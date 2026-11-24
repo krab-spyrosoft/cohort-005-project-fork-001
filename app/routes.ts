@@ -54,4 +54,9 @@ export default [
   route("api/logout", "routes/api.logout.ts"),
   route("api/video-tracking", "routes/api.video-tracking.ts"),
   route("api/set-dev-country", "routes/api.set-dev-country.ts"),
+  // PROTOTYPE (#22): seeds the current user's Knock feed.
+  route(
+    "prototype/notification-feed/seed",
+    "routes/prototype.notification-feed.seed.ts"
+  ),
 ] satisfies RouteConfig;
